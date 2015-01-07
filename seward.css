@@ -1,0 +1,19 @@
+html
+{
+	overflow:hidden;
+}
+sew-obj
+{
+	position:absolute;
+}
+/*.hidden
+{
+	visibility:hidden;
+	display:none;
+}*/
+.sew-txt
+{
+  background-color:white;
+  padding:10px;
+  border:5px solid black;
+}

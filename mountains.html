@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Seward</title>
+		<link rel="stylesheet" href="seward.css"/>
+    <script type="text/javascript">window.Seward={};</script>
+		<script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="classie.js"></script>
+    <script type="text/javascript" src="drawsvg.js"></script>
+		<script type="text/javascript" src="seward.js"></script>
+	</head>
+	<body style="background-color:orange">
+    <sew-story>
+      <sew-obj-list>
+		    <sew-obj sew-id="mountainbg" src="mountainbg.svg" w="1" h="1"></sew-obj>
+        <sew-obj sew-id="inittxt" class="sew-txt" style="max-width:100px">A long, long time ago there were a bunch of mountains in the middle of nowhere</sew-obj>
+        <sew-obj sew-id="twotxt" class="sew-txt" style="max-width:200px">The mountains were super pretty and made everyone happy</sew-obj>
+		  </sew-obj-list>
+      <sew-page-list>
+        <sew-page>
+          <draw sew-id="mountainbg" frames="80"></draw>
+          <loc sew-id="mountainbg" x="0w" y="0w"></loc>
+          <loc sew-id="inittxt" x="20px" y="20px" fade="2000"></loc>
+        </sew-page>
+        <sew-page>
+          <hide sew-id="inittxt" fade="200"></hide>
+          <show sew-id="twotxt" fade="2000"></show>
+          <svgresize sew-id="mountainbg" w="8" h="8" f="ease" t="10s" d="0s"></svgresize>
+          <slide sew-id="mountainbg" x="-3w" y="-1w" f="ease" t="10s" d="0s"></slide>
+        </sew-page>
+        <sew-page>
+        </sew-page>
+		  </sew-page-list>
+    </sew-story>
+	</body>
+</html>
+
